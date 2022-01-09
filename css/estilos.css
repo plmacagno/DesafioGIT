@@ -1,0 +1,375 @@
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "section1 section1 section1"
+        "section2 section2 section2"
+        "footer footer footer";
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.header {
+    background-color: rgb(205, 235, 198);
+    grid-area: header;
+    height: 35vh;
+    display: flex;
+    justify-content: stretch;
+
+
+}
+
+.header img {
+    height: 9vh;
+    justify-content: space-between;
+    justify-content: stretch;
+
+}
+
+.header nav {
+    background-color: rgb(205, 235, 198);
+    grid-area: nav;
+    align-content: stretch;
+    align-items: stretch;
+
+
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.header li {
+    display: flex;
+    margin: 10px 20px;
+    background-color: white;
+    padding: 10px;
+    color: green;
+
+}
+
+.h1 {
+    color: green;
+    font-style: italic;
+    font-size: 40px;
+    font-family: fantasy;
+
+}
+
+.nav__link--activo {
+    color: green;
+    font-weight: bold;
+
+}
+
+.section1 {
+
+    background-color: rgb(223, 243, 222);
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center
+}
+
+.section1 h2 {
+    display: row;
+    text-align: center;
+    height: 150vh;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: green;
+    font-style: italic;
+    font-size: 40px;
+    font-family: fantasy;
+
+}
+
+.section1 h3 {
+    display: row;
+    text-align: center;
+    height: 50vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: green;
+    font-style: italic;
+    font-size: 20px;
+    font-family: fantasy;
+
+}
+
+.section1 img {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 40vh;
+    margin: 0px 150px;
+
+
+}
+
+.section1 div img {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin: 0px 100px;
+
+}
+
+
+.fotoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin: 0px 50px;
+    margin-top: 30px;
+
+}
+
+.section1 p {
+    max-width: 100%;
+    min-width: 250px;
+    text-align: justify;
+    color: green;
+    font-size: 20px;
+
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: rgb(223, 243, 222);
+    font-size: medium;
+    color: green;
+    text-transform: capitalize;
+    padding: 10px;
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a {
+    color: green;
+}
+
+.section2 p {
+    max-width: 100%;
+    min-width: 250px;
+    margin: 20px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.nosotros {
+    margin: 20px;
+    display: flex;
+}
+
+.nosotros p {
+    max-width: 500px;
+    min-width: 250px;
+    margin: 10px
+}
+
+
+.pie {
+    color: white;
+}
+
+.pie div {
+    display: inline;
+    position: relative;
+    bottom: 300px;
+    left: 350px;
+}
+
+.pie h3 {
+    color: green;
+    font-style: italic;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: left;
+
+}
+
+
+/*media QR*/
+/*tamaño Tablet*/
+@media (max-width: 1000px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nav header"
+            "section1 section1"
+            "section2 section2"
+            "footer footer";
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+
+    .section1 {
+        height: 50vh;
+        align-items: center;
+    }
+
+    .header {
+        height: 60vh;
+    }
+
+    .header ul {
+        flex-direction: column;
+        list-style: none;
+        justify-content: right;
+
+    }
+
+    .header li {
+        display: flex;
+        margin: 10px 10px;
+        background-color: white;
+        padding: 3px;
+        color: green;
+
+    }
+
+    .h1 {
+        color: green;
+        font-style: italic;
+        font-size: 30px;
+        font-family: fantasy;
+
+    }
+
+    .nav__link--activo {
+        color: green;
+        font-weight: bold;
+
+    }
+
+        .section1 p {
+        max-width: 400px;
+        align-items: center;
+    }
+
+    .section1 div img {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        margin: 0px 50px;
+    }
+
+
+    .section2 {
+        padding: 30px;
+        padding-top: 100;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    
+    .pie iframe {
+        display: none;
+    }
+
+    .pie h3 {
+        font-size: 10px;
+    }
+
+    .pie div {
+        border-top: 0px;
+        border-left: 0px;
+        bottom: 20px;
+        left: 350px;
+    }
+
+}
+
+/* tamaño celular*/
+@media (max-width: 615px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nav header"
+            "section1"
+            "section2"
+            "footer footer";
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .header {
+        flex-direction: column;
+        height: 95vh;
+    }
+
+    .section1 div img {
+        display:none;
+        
+    }
+
+    .section2 {
+        height: 450px;
+    }
+
+    .section2 p {
+        min-width: 250px;
+        margin: 20px;
+        text-align: justify;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .nosotros p {
+        max-width: 250px;
+        min-width: 150px;
+        margin: 0px
+    }
+    
+    .mensaje p{
+        max-width: 150px;
+        min-width: 80px;
+        margin-left: 0px ;
+    }
+    .pie iframe {
+        display: none;
+    }
+
+    .pie h3 {
+        font-size: 15px;
+    }
+
+    .pie div {
+        display: flex;
+        bottom: 10px;
+        left: 15px;
+    }
+
+}
